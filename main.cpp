@@ -46,6 +46,9 @@ int main()
         //Primera opción
         if (menu_entrada == 1)
         {
+            cout<<"Ha elegido la primera opción\n";
+            cout<<"\n";
+
             g.crea_vehiculos(nv);                   //genera una serie de vehículos y los mete en el almacen de la fabrica
             cout<<"\n";
         }
@@ -54,6 +57,9 @@ int main()
         //Segunda opción
         else if (menu_entrada == 2)                 //genera nv vehículos y los mete en el almacen de la fabrica
         {
+            cout<<"Ha elegido la segunda opción\n";
+            cout<<"\n";
+
             cout<<"Indique cuantos vehículos quiere generar: \n";
             cin>>nv;
             while((nv<10)||(nv>30))
@@ -69,6 +75,8 @@ int main()
         //Tercera opción
         else if (menu_entrada == 3)
         {
+            cout<<"Ha elegido la tercera opción\n";
+            cout<<"\n";
 
             g.muestra_almacen_fabrica();            //Muestra los automoviles almacenados en el almacen de la fabrica
             cout<<"\n";
@@ -78,6 +86,9 @@ int main()
         //Cuarta opción
         else if (menu_entrada == 4)
         {
+            cout<<"Ha elegido la cuarta opción\n";
+            cout<<"\n";
+
             g.limpia_almacen();                     //Borra los automoviles almacenados en el almacen de la fabrica
             cout<<"\n";
         }
@@ -88,6 +99,9 @@ int main()
         //Quinta opción
         else if (menu_entrada == 5)
         {
+            cout<<"Ha elegido la quinta opción\n";
+            cout<<"\n";
+
             //cout<<"Indique cuantos vehículos quiere eliminar: \n";
             //cin>>ns;
 
@@ -103,6 +117,9 @@ int main()
         //Sexta opción
         else if (menu_entrada == 6)
         {
+            cout<<"Ha elegido la sexta opción\n";
+            cout<<"\n";
+
             cout<<"Indique cuantos vehículos quiere eliminar: \n";
             cin>>ns;
             if (ns>nv){
@@ -128,7 +145,8 @@ int main()
         //Septima opción
         else if (menu_entrada == 7)
         {
-            cout<<"Ha elegido la séptima opción\n";
+            cout<<"Ha elegido la septima opción\n";
+            cout<<"\n";
 
             g.muestra_zonas();
             cout<<"\n";
@@ -138,6 +156,11 @@ int main()
         else if (menu_entrada == 8)
         {
             cout<<"Ha elegido la octava opción\n";
+<<<<<<< HEAD
+=======
+            cout<<"\n";
+            //cout<<"Ha elegido la octava opción\n";
+>>>>>>> f548aa591dae668af45cc383833b3f7938143ab9
             g.crea_vehiculos(nv);                   //genera una serie de vehículos y los mete en el almacen de la fabrica
             cout<<"\n";
             g.muestra_almacen_fabrica();            //Muestra los automoviles almacenados en el almacen de la fabrica
