@@ -113,7 +113,7 @@ int main()
                 cout << "Error: Debe pedir minimo 3 automoviles y como máximo 8.\n";
                 cin>>ns;
             }
-            cout<<"Indique el almacen de destino: \n";
+            cout<<"Indique el almacen de destino: \n 1:Almacen Norte \n 2:Almacen Sur  \n 3:Almacen Este \n 4:Almacen Oeste \n";
             cin>>nAlmacen;
             while((nAlmacen<1)||(nAlmacen>4))
             {
@@ -138,7 +138,6 @@ int main()
         else if (menu_entrada == 8)
         {
             cout<<"Ha elegido la octava opción\n";
-            cout<<"Ha elegido la octava opción\n";
             g.crea_vehiculos(nv);                   //genera una serie de vehículos y los mete en el almacen de la fabrica
             cout<<"\n";
             g.muestra_almacen_fabrica();            //Muestra los automoviles almacenados en el almacen de la fabrica
@@ -147,6 +146,7 @@ int main()
             cout<<"\n";
             g.muestra_zonas();
             cout<<"\n";
+            g.muestra_almacen_fabrica();
         }
 
         //Salir del programa
