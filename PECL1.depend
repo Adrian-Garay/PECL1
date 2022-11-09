@@ -595,3 +595,92 @@
 	"string.h"
 	"vehiculo.h"
 
+1668021499 source:c:\users\fatim\onedrive\escritorio\pecl1\main.cpp
+	<iostream>
+	"include\Pila.h"
+	"include/Cola.h"
+	"vehiculo.h"
+	"gestor.h"
+	<stdlib.h>
+	<string>
+	<time.h>
+	"string.h"
+	<locale.h>
+
+1668021499 c:\users\fatim\onedrive\escritorio\pecl1\include\pila.h
+	"NodoPila.h"
+	"vehiculo.h"
+
+1668021499 c:\users\fatim\onedrive\escritorio\pecl1\include\nodopila.h
+	"vehiculo.h"
+	<iostream>
+
+1668021499 c:\users\fatim\onedrive\escritorio\pecl1\include\vehiculo.h
+	<string>
+
+1668021499 c:\users\fatim\onedrive\escritorio\pecl1\include\cola.h
+	"NodoCola.h"
+	"vehiculo.h"
+
+1668021499 c:\users\fatim\onedrive\escritorio\pecl1\include\nodocola.h
+	"vehiculo.h"
+	<iostream>
+
+1668021499 c:\users\fatim\onedrive\escritorio\pecl1\include\gestor.h
+	<iostream>
+	"Pila.h"
+	"Cola.h"
+	"ZonaReparto.h"
+
+1668021499 c:\users\fatim\onedrive\escritorio\pecl1\include\zonareparto.h
+	"Cola.h"
+	"Pila.h"
+	"vehiculo.h"
+
+1668021499 source:c:\users\fatim\onedrive\escritorio\pecl1\src\cola.cpp
+	"../include/Cola.h"
+	"../include/NodoCola.h"
+	"vehiculo.h"
+	"Cola.h"
+	<iostream>
+
+1668021499 source:c:\users\fatim\onedrive\escritorio\pecl1\src\gestor.cpp
+	<string>
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	"string.h"
+	"gestor.h"
+	"vehiculo.h"
+	"Cola.h"
+	<time.h>
+	"ZonaReparto.h"
+
+1668021499 source:c:\users\fatim\onedrive\escritorio\pecl1\src\nodocola.cpp
+	"../include/NodoCola.h"
+	"vehiculo.h"
+
+1668021499 source:c:\users\fatim\onedrive\escritorio\pecl1\src\nodopila.cpp
+	"../include/NodoPila.h"
+	"vehiculo.h"
+
+1668021499 source:c:\users\fatim\onedrive\escritorio\pecl1\src\pila.cpp
+	<iostream>
+	"../include/Pila.h"
+	"../include/NodoPila.h"
+	"vehiculo.h"
+
+1668021499 source:c:\users\fatim\onedrive\escritorio\pecl1\src\vehiculo.cpp
+	"vehiculo.h"
+	<stdlib.h>
+	<time.h>
+	<iostream>
+	<string>
+	"string.h"
+
+1668021499 source:c:\users\fatim\onedrive\escritorio\pecl1\src\zonareparto.cpp
+	"ZonaReparto.h"
+	"Cola.h"
+	"string.h"
+	"vehiculo.h"
+
