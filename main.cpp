@@ -156,11 +156,9 @@ int main()
         else if (menu_entrada == 8)
         {
             cout<<"Ha elegido la octava opción\n";
-<<<<<<< HEAD
-=======
             cout<<"\n";
+
             //cout<<"Ha elegido la octava opción\n";
->>>>>>> f548aa591dae668af45cc383833b3f7938143ab9
             g.crea_vehiculos(nv);                   //genera una serie de vehículos y los mete en el almacen de la fabrica
             cout<<"\n";
             g.muestra_almacen_fabrica();            //Muestra los automoviles almacenados en el almacen de la fabrica
