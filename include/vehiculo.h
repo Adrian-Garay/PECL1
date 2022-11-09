@@ -1,0 +1,46 @@
+#ifndef VEHICULO_H
+#define VEHICULO_H
+#include<string>
+
+
+class Vehiculo
+{
+public:
+    friend class Vehiculo;
+    //metodos
+    Vehiculo();
+    ~Vehiculo();
+    //Vehiculo(std::string nBast,std::string mod, std::string col, int conce);
+    //Vehiculo_aleatorio();
+    void cargarVehiculo(std::string nBast,std::string mod, std::string col, int conce);
+    std::string devolverColor();
+    std::string devolverModelo();
+    std::string devolverNBastidor();
+    int devolverConcesionario();
+    std::string verVehiculo();
+    void asignaConcesionario(int nc);
+
+    int concesionario; //número entero entre 1 y máximo de concesionarios NC
+
+
+
+
+    /**<void crear ();
+    vehiculo(char nBastidor, char modelo, char color, int concesionario);
+    void crearNBastidor ();  */
+
+protected:
+
+private:
+    std::string nBastidor;//cadena formada por 5 letras y 3 dígitos.
+    std::string modelo; //se fabrican al menos 6 modelos diferentes.
+    std::string color;//: se fabrican al menos 6 colores diferentes.
+
+
+    //atributos
+
+
+
+};
+
+#endif // VEHICULO_H

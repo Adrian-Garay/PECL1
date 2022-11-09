@@ -1,0 +1,597 @@
+# depslib dependency file v1.0
+1668018220 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\nodocola.cpp
+	"../include/NodoCola.h"
+	"vehiculo.h"
+
+1668008033 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\nodocola.h
+	"vehiculo.h"
+	<iostream>
+
+1668018220 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\vehiculo.h
+	<string>
+
+1668018220 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\nodopila.cpp
+	"../include/NodoPila.h"
+	"vehiculo.h"
+
+1668018220 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\nodopila.h
+	"vehiculo.h"
+	<iostream>
+
+1668019531 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\pila.cpp
+	<iostream>
+	"../include/Pila.h"
+	"../include/NodoPila.h"
+	"vehiculo.h"
+
+1668018220 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\pila.h
+	"NodoPila.h"
+	"vehiculo.h"
+
+1668018220 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\vehiculo.cpp
+	"vehiculo.h"
+	<stdlib.h>
+	<time.h>
+	<iostream>
+	<string>
+	"string.h"
+
+1668019742 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\main.cpp
+	<iostream>
+	"include\Pila.h"
+	"include/Cola.h"
+	"vehiculo.h"
+	"gestor.h"
+	<stdlib.h>
+	<string>
+	<time.h>
+	"string.h"
+	<locale.h>
+
+1668010650 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\cola.h
+	"NodoCola.h"
+	"vehiculo.h"
+
+1668018220 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\gestor.h
+	<iostream>
+	"Pila.h"
+	"Cola.h"
+	"ZonaReparto.h"
+
+1668011258 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\cola.cpp
+	"../include/Cola.h"
+	"../include/NodoCola.h"
+	"vehiculo.h"
+	"Cola.h"
+	<iostream>
+
+1668018153 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\gestor.cpp
+	<string>
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	"string.h"
+	"gestor.h"
+	"vehiculo.h"
+	"Cola.h"
+	<time.h>
+	"ZonaReparto.h"
+
+1668006029 source:c:\users\ajgar\desktop\repositoriopruebas\main.cpp
+	<iostream>
+	"include\Pila.h"
+	"include/Cola.h"
+	"vehiculo.h"
+	"gestor.h"
+	<stdlib.h>
+	<string>
+	<time.h>
+	"string.h"
+	<locale.h>
+
+1667989156 c:\users\ajgar\desktop\repositoriopruebas\include\pila.h
+	"NodoPila.h"
+	"vehiculo.h"
+
+1667986060 c:\users\ajgar\desktop\repositoriopruebas\include\nodopila.h
+	"vehiculo.h"
+	<iostream>
+
+1667906370 c:\users\ajgar\desktop\repositoriopruebas\include\cola.h
+	"NodoCola.h"
+	"vehiculo.h"
+
+1667342636 c:\users\ajgar\desktop\repositoriopruebas\include\nodocola.h
+	"vehiculo.h"
+	<iostream>
+
+1668007622 c:\users\ajgar\desktop\repositoriopruebas\include\vehiculo.h
+	<string>
+
+1668007896 c:\users\ajgar\desktop\repositoriopruebas\include\gestor.h
+	<iostream>
+	"Pila.h"
+	"Cola.h"
+	"ZonaReparto.h"
+
+1667986494 source:c:\users\ajgar\desktop\repositoriopruebas\src\cola.cpp
+	"../include/Cola.h"
+	"../include/NodoCola.h"
+	"vehiculo.h"
+	"Cola.h"
+	<iostream>
+
+1668007548 source:c:\users\ajgar\desktop\repositoriopruebas\src\gestor.cpp
+	<string>
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	"string.h"
+	"gestor.h"
+	"vehiculo.h"
+	"Cola.h"
+	<time.h>
+	"ZonaReparto.h"
+
+1667342636 source:c:\users\ajgar\desktop\repositoriopruebas\src\nodocola.cpp
+	"../include/NodoCola.h"
+	"vehiculo.h"
+
+1667986278 source:c:\users\ajgar\desktop\repositoriopruebas\src\nodopila.cpp
+	"../include/NodoPila.h"
+	"vehiculo.h"
+
+1667993433 source:c:\users\ajgar\desktop\repositoriopruebas\src\pila.cpp
+	<iostream>
+	"../include/Pila.h"
+	"../include/NodoPila.h"
+
+1668007640 source:c:\users\ajgar\desktop\repositoriopruebas\src\vehiculo.cpp
+	"vehiculo.h"
+	<stdlib.h>
+	<time.h>
+	<iostream>
+	<string>
+	"string.h"
+
+1667505650 source:d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia4nov\repositoriopruebas\main.cpp
+	<iostream>
+	"include\Pila.h"
+	"include/Cola.h"
+	"vehiculo.h"
+	"gestor.h"
+	<stdlib.h>
+	<string>
+	<time.h>
+	"string.h"
+	<locale.h>
+
+1667342636 d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia4nov\repositoriopruebas\include\pila.h
+	"NodoPila.h"
+
+1666718984 d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia4nov\repositoriopruebas\include\nodopila.h
+	<iostream>
+
+1667502188 d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia4nov\repositoriopruebas\include\cola.h
+	"NodoCola.h"
+	"vehiculo.h"
+
+1667342636 d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia4nov\repositoriopruebas\include\nodocola.h
+	"vehiculo.h"
+	<iostream>
+
+1667502608 d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia4nov\repositoriopruebas\include\vehiculo.h
+	<string>
+
+1667500664 d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia4nov\repositoriopruebas\include\gestor.h
+	<iostream>
+	"Pila.h"
+	"Cola.h"
+
+1667579090 source:d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia4nov\repositoriopruebas\src\cola.cpp
+	"../include/Cola.h"
+	"../include/NodoCola.h"
+	"vehiculo.h"
+	"Cola.h"
+	<iostream>
+
+1667571780 source:d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia4nov\repositoriopruebas\src\gestor.cpp
+	<string>
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	"string.h"
+	"gestor.h"
+	"vehiculo.h"
+	"Cola.h"
+	<time.h>
+
+1667342636 source:d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia4nov\repositoriopruebas\src\nodocola.cpp
+	"../include/NodoCola.h"
+	"vehiculo.h"
+
+1666718984 source:d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia4nov\repositoriopruebas\src\nodopila.cpp
+	"../include/NodoPila.h"
+
+1667342636 source:d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia4nov\repositoriopruebas\src\pila.cpp
+	<iostream>
+	"../include/Pila.h"
+	"../include/NodoPila.h"
+
+1667578994 source:d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia4nov\repositoriopruebas\src\vehiculo.cpp
+	"vehiculo.h"
+	<stdlib.h>
+	<time.h>
+	<iostream>
+	<string>
+	"string.h"
+
+1667910424 source:c:\users\ajgar\desktop\repositoriopruebas\src\zonareparto.cpp
+	"ZonaReparto.h"
+
+1667910588 c:\users\ajgar\desktop\repositoriopruebas\include\zonareparto.h
+	"Cola.h"
+	"Pila.h"
+
+1667986494 source:d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia9nov\repositoriopruebas\src\cola.cpp
+	"../include/Cola.h"
+	"../include/NodoCola.h"
+	"vehiculo.h"
+	"Cola.h"
+	<iostream>
+
+1667906370 d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia9nov\repositoriopruebas\include\cola.h
+	"NodoCola.h"
+	"vehiculo.h"
+
+1667342636 d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia9nov\repositoriopruebas\include\nodocola.h
+	"vehiculo.h"
+	<iostream>
+
+1667502608 d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia9nov\repositoriopruebas\include\vehiculo.h
+	<string>
+
+1667342636 source:d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia9nov\repositoriopruebas\src\nodocola.cpp
+	"../include/NodoCola.h"
+	"vehiculo.h"
+
+1667986278 source:d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia9nov\repositoriopruebas\src\nodopila.cpp
+	"../include/NodoPila.h"
+	"vehiculo.h"
+
+1667986060 d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia9nov\repositoriopruebas\include\nodopila.h
+	"vehiculo.h"
+	<iostream>
+
+1667989288 source:d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia9nov\repositoriopruebas\src\pila.cpp
+	<iostream>
+	"../include/Pila.h"
+	"../include/NodoPila.h"
+
+1667989156 d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia9nov\repositoriopruebas\include\pila.h
+	"NodoPila.h"
+	"vehiculo.h"
+
+1667594612 source:d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia9nov\repositoriopruebas\src\vehiculo.cpp
+	"vehiculo.h"
+	<stdlib.h>
+	<time.h>
+	<iostream>
+	<string>
+	"string.h"
+
+1667910424 source:d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia9nov\repositoriopruebas\src\zonareparto.cpp
+	"ZonaReparto.h"
+
+1667910588 d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia9nov\repositoriopruebas\include\zonareparto.h
+	"Cola.h"
+	"Pila.h"
+
+1667985810 source:d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia9nov\repositoriopruebas\main.cpp
+	<iostream>
+	"include\Pila.h"
+	"include/Cola.h"
+	"vehiculo.h"
+	"gestor.h"
+	<stdlib.h>
+	<string>
+	<time.h>
+	"string.h"
+	<locale.h>
+
+1667987692 d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia9nov\repositoriopruebas\include\gestor.h
+	<iostream>
+	"Pila.h"
+	"Cola.h"
+	"ZonaReparto.h"
+
+1667990050 source:d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia9nov\repositoriopruebas\src\gestor.cpp
+	<string>
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	"string.h"
+	"gestor.h"
+	"vehiculo.h"
+	"Cola.h"
+	<time.h>
+	"ZonaReparto.h"
+
+1668011568 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\zonareparto.h
+	"Cola.h"
+	"Pila.h"
+	"vehiculo.h"
+
+1668011258 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\zonareparto.cpp
+	"ZonaReparto.h"
+	"Cola.h"
+	"string.h"
+	"vehiculo.h"
+
+1668019785 source:c:\users\fatim\onedrive\escritorio\labeedd\main.cpp
+	<iostream>
+	"include\Pila.h"
+	"include/Cola.h"
+	"vehiculo.h"
+	"gestor.h"
+	<stdlib.h>
+	<string>
+	<time.h>
+	"string.h"
+	<locale.h>
+
+1668018220 c:\users\fatim\onedrive\escritorio\labeedd\include\pila.h
+	"NodoPila.h"
+	"vehiculo.h"
+
+1668018220 c:\users\fatim\onedrive\escritorio\labeedd\include\nodopila.h
+	"vehiculo.h"
+	<iostream>
+
+1668018220 c:\users\fatim\onedrive\escritorio\labeedd\include\vehiculo.h
+	<string>
+
+1668010650 c:\users\fatim\onedrive\escritorio\labeedd\include\cola.h
+	"NodoCola.h"
+	"vehiculo.h"
+
+1668008033 c:\users\fatim\onedrive\escritorio\labeedd\include\nodocola.h
+	"vehiculo.h"
+	<iostream>
+
+1668018220 c:\users\fatim\onedrive\escritorio\labeedd\include\gestor.h
+	<iostream>
+	"Pila.h"
+	"Cola.h"
+	"ZonaReparto.h"
+
+1668011568 c:\users\fatim\onedrive\escritorio\labeedd\include\zonareparto.h
+	"Cola.h"
+	"Pila.h"
+	"vehiculo.h"
+
+1668011258 source:c:\users\fatim\onedrive\escritorio\labeedd\src\cola.cpp
+	"../include/Cola.h"
+	"../include/NodoCola.h"
+	"vehiculo.h"
+	"Cola.h"
+	<iostream>
+
+1668018153 source:c:\users\fatim\onedrive\escritorio\labeedd\src\gestor.cpp
+	<string>
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	"string.h"
+	"gestor.h"
+	"vehiculo.h"
+	"Cola.h"
+	<time.h>
+	"ZonaReparto.h"
+
+1668018220 source:c:\users\fatim\onedrive\escritorio\labeedd\src\nodocola.cpp
+	"../include/NodoCola.h"
+	"vehiculo.h"
+
+1668018220 source:c:\users\fatim\onedrive\escritorio\labeedd\src\nodopila.cpp
+	"../include/NodoPila.h"
+	"vehiculo.h"
+
+1668019531 source:c:\users\fatim\onedrive\escritorio\labeedd\src\pila.cpp
+	<iostream>
+	"../include/Pila.h"
+	"../include/NodoPila.h"
+	"vehiculo.h"
+
+1668018220 source:c:\users\fatim\onedrive\escritorio\labeedd\src\vehiculo.cpp
+	"vehiculo.h"
+	<stdlib.h>
+	<time.h>
+	<iostream>
+	<string>
+	"string.h"
+
+1668011258 source:c:\users\fatim\onedrive\escritorio\labeedd\src\zonareparto.cpp
+	"ZonaReparto.h"
+	"Cola.h"
+	"string.h"
+	"vehiculo.h"
+
+1668020742 source:c:\users\ajgar\desktop\nueva carpeta\main.cpp
+	<iostream>
+	"include\Pila.h"
+	"include/Cola.h"
+	"vehiculo.h"
+	"gestor.h"
+	<stdlib.h>
+	<string>
+	<time.h>
+	"string.h"
+	<locale.h>
+
+1668020742 c:\users\ajgar\desktop\nueva carpeta\include\pila.h
+	"NodoPila.h"
+	"vehiculo.h"
+
+1668020742 c:\users\ajgar\desktop\nueva carpeta\include\nodopila.h
+	"vehiculo.h"
+	<iostream>
+
+1668020742 c:\users\ajgar\desktop\nueva carpeta\include\vehiculo.h
+	<string>
+
+1668020742 c:\users\ajgar\desktop\nueva carpeta\include\cola.h
+	"NodoCola.h"
+	"vehiculo.h"
+
+1668020742 c:\users\ajgar\desktop\nueva carpeta\include\nodocola.h
+	"vehiculo.h"
+	<iostream>
+
+1668020742 c:\users\ajgar\desktop\nueva carpeta\include\gestor.h
+	<iostream>
+	"Pila.h"
+	"Cola.h"
+	"ZonaReparto.h"
+
+1668020742 c:\users\ajgar\desktop\nueva carpeta\include\zonareparto.h
+	"Cola.h"
+	"Pila.h"
+	"vehiculo.h"
+
+1668020742 source:c:\users\ajgar\desktop\nueva carpeta\src\cola.cpp
+	"../include/Cola.h"
+	"../include/NodoCola.h"
+	"vehiculo.h"
+	"Cola.h"
+	<iostream>
+
+1668020742 source:c:\users\ajgar\desktop\nueva carpeta\src\gestor.cpp
+	<string>
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	"string.h"
+	"gestor.h"
+	"vehiculo.h"
+	"Cola.h"
+	<time.h>
+	"ZonaReparto.h"
+
+1668020742 source:c:\users\ajgar\desktop\nueva carpeta\src\nodocola.cpp
+	"../include/NodoCola.h"
+	"vehiculo.h"
+
+1668020742 source:c:\users\ajgar\desktop\nueva carpeta\src\nodopila.cpp
+	"../include/NodoPila.h"
+	"vehiculo.h"
+
+1668020742 source:c:\users\ajgar\desktop\nueva carpeta\src\pila.cpp
+	<iostream>
+	"../include/Pila.h"
+	"../include/NodoPila.h"
+	"vehiculo.h"
+
+1668020742 source:c:\users\ajgar\desktop\nueva carpeta\src\vehiculo.cpp
+	"vehiculo.h"
+	<stdlib.h>
+	<time.h>
+	<iostream>
+	<string>
+	"string.h"
+
+1668020742 source:c:\users\ajgar\desktop\nueva carpeta\src\zonareparto.cpp
+	"ZonaReparto.h"
+	"Cola.h"
+	"string.h"
+	"vehiculo.h"
+
+1668020742 source:c:\users\ajgar\desktop\pecl1\main.cpp
+	<iostream>
+	"include\Pila.h"
+	"include/Cola.h"
+	"vehiculo.h"
+	"gestor.h"
+	<stdlib.h>
+	<string>
+	<time.h>
+	"string.h"
+	<locale.h>
+
+1668020742 c:\users\ajgar\desktop\pecl1\include\pila.h
+	"NodoPila.h"
+	"vehiculo.h"
+
+1668020742 c:\users\ajgar\desktop\pecl1\include\nodopila.h
+	"vehiculo.h"
+	<iostream>
+
+1668020742 c:\users\ajgar\desktop\pecl1\include\vehiculo.h
+	<string>
+
+1668020742 c:\users\ajgar\desktop\pecl1\include\cola.h
+	"NodoCola.h"
+	"vehiculo.h"
+
+1668020742 c:\users\ajgar\desktop\pecl1\include\nodocola.h
+	"vehiculo.h"
+	<iostream>
+
+1668020742 c:\users\ajgar\desktop\pecl1\include\gestor.h
+	<iostream>
+	"Pila.h"
+	"Cola.h"
+	"ZonaReparto.h"
+
+1668020742 c:\users\ajgar\desktop\pecl1\include\zonareparto.h
+	"Cola.h"
+	"Pila.h"
+	"vehiculo.h"
+
+1668020742 source:c:\users\ajgar\desktop\pecl1\src\cola.cpp
+	"../include/Cola.h"
+	"../include/NodoCola.h"
+	"vehiculo.h"
+	"Cola.h"
+	<iostream>
+
+1668020742 source:c:\users\ajgar\desktop\pecl1\src\gestor.cpp
+	<string>
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	"string.h"
+	"gestor.h"
+	"vehiculo.h"
+	"Cola.h"
+	<time.h>
+	"ZonaReparto.h"
+
+1668020742 source:c:\users\ajgar\desktop\pecl1\src\nodocola.cpp
+	"../include/NodoCola.h"
+	"vehiculo.h"
+
+1668020742 source:c:\users\ajgar\desktop\pecl1\src\nodopila.cpp
+	"../include/NodoPila.h"
+	"vehiculo.h"
+
+1668020742 source:c:\users\ajgar\desktop\pecl1\src\pila.cpp
+	<iostream>
+	"../include/Pila.h"
+	"../include/NodoPila.h"
+	"vehiculo.h"
+
+1668020742 source:c:\users\ajgar\desktop\pecl1\src\vehiculo.cpp
+	"vehiculo.h"
+	<stdlib.h>
+	<time.h>
+	<iostream>
+	<string>
+	"string.h"
+
+1668020742 source:c:\users\ajgar\desktop\pecl1\src\zonareparto.cpp
+	"ZonaReparto.h"
+	"Cola.h"
+	"string.h"
+	"vehiculo.h"
+
