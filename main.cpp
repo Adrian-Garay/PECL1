@@ -101,10 +101,6 @@ int main()
         {
             cout<<"Ha elegido la quinta opción\n";
             cout<<"\n";
-
-            //cout<<"Indique cuantos vehículos quiere eliminar: \n";
-            //cin>>ns;
-
             if((ns<3)||(ns>8))
             {
                 cout << "Error: Debe pedir minimo 3 automoviles y como máximo 8.\n";
@@ -160,9 +156,6 @@ int main()
         {
             cout<<"Ha elegido la octava opción\n";
             cout<<"\n";
-
-            //cout<<"Ha elegido la octava opción\n";
-
             g.muestra_almacen_fabrica();            //Muestra los automoviles almacenados en el almacen de la fabrica
             cout<<"------------------\n";
             g.cambioAlmacenRandTotal(ns,np,nc);

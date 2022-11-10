@@ -10,8 +10,6 @@ public:
     //metodos
     Vehiculo();
     ~Vehiculo();
-    //Vehiculo(std::string nBast,std::string mod, std::string col, int conce);
-    //Vehiculo_aleatorio();
     void cargarVehiculo(std::string nBast,std::string mod, std::string col, int conce);
     std::string devolverColor();
     std::string devolverModelo();
@@ -22,22 +20,13 @@ public:
 
     int concesionario; //número entero entre 1 y máximo de concesionarios NC
 
-
-
-
-    /**<void crear ();
-    vehiculo(char nBastidor, char modelo, char color, int concesionario);
-    void crearNBastidor ();  */
-
 protected:
 
 private:
+        //atributos
     std::string nBastidor;//cadena formada por 5 letras y 3 dígitos.
     std::string modelo; //se fabrican al menos 6 modelos diferentes.
     std::string color;//: se fabrican al menos 6 colores diferentes.
-
-
-    //atributos
 
 
 

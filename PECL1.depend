@@ -595,7 +595,7 @@
 	"string.h"
 	"vehiculo.h"
 
-1668073261 source:c:\users\fatim\onedrive\escritorio\pecl1\main.cpp
+1668081307 source:c:\users\fatim\onedrive\escritorio\pecl1\main.cpp
 	<iostream>
 	"include\Pila.h"
 	"include/Cola.h"
@@ -615,10 +615,10 @@
 	"vehiculo.h"
 	<iostream>
 
-1668071569 c:\users\fatim\onedrive\escritorio\pecl1\include\vehiculo.h
+1668081424 c:\users\fatim\onedrive\escritorio\pecl1\include\vehiculo.h
 	<string>
 
-1668021499 c:\users\fatim\onedrive\escritorio\pecl1\include\cola.h
+1668081424 c:\users\fatim\onedrive\escritorio\pecl1\include\cola.h
 	"NodoCola.h"
 	"vehiculo.h"
 
@@ -626,7 +626,7 @@
 	"vehiculo.h"
 	<iostream>
 
-1668072871 c:\users\fatim\onedrive\escritorio\pecl1\include\gestor.h
+1668081150 c:\users\fatim\onedrive\escritorio\pecl1\include\gestor.h
 	<iostream>
 	"Pila.h"
 	"Cola.h"
@@ -637,14 +637,14 @@
 	"Pila.h"
 	"vehiculo.h"
 
-1668021499 source:c:\users\fatim\onedrive\escritorio\pecl1\src\cola.cpp
+1668081140 source:c:\users\fatim\onedrive\escritorio\pecl1\src\cola.cpp
 	"../include/Cola.h"
 	"../include/NodoCola.h"
 	"vehiculo.h"
 	"Cola.h"
 	<iostream>
 
-1668076423 source:c:\users\fatim\onedrive\escritorio\pecl1\src\gestor.cpp
+1668081307 source:c:\users\fatim\onedrive\escritorio\pecl1\src\gestor.cpp
 	<string>
 	<iostream>
 	<stdlib.h>
@@ -670,7 +670,7 @@
 	"../include/NodoPila.h"
 	"vehiculo.h"
 
-1668021499 source:c:\users\fatim\onedrive\escritorio\pecl1\src\vehiculo.cpp
+1668081140 source:c:\users\fatim\onedrive\escritorio\pecl1\src\vehiculo.cpp
 	"vehiculo.h"
 	<stdlib.h>
 	<time.h>

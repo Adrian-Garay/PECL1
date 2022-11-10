@@ -30,8 +30,7 @@ public:
     void cambioAlmacenRandTotal (int ns , int np,int nc);
 
     void cambioAlmacenRand(int ns, int np, int nc);
-    void cambioAlmacen(int ns,int nAlmacen, int np, int nc);
-    //void muestra_zonas();         //Ejercicio 7
+    void cambioAlmacen(int ns,int nAlmacen, int np, int);
 
     //Pilas y colas
     Cola Cola_fabrica; //Cola de la fabrica que contendra los automoviles

@@ -26,7 +26,6 @@ Vehiculo Gestor::asignaConcesionario2(Vehiculo vehi, int nc)
     int num;
 
     num = 1 + rand() % (nc); //GENERA ALEATORIOS ENTRE 0 Y 5
-    //cout << num<< "";
     vehi.concesionario=num;
     return vehi;
 }
@@ -211,10 +210,7 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)          //Apartado 5
                     }
                 }
             }
-            /*else
-            {
-                cout<<error<<"\n";
-            }*/
+
         }
         cout<<"Se han movido "<< ns << " vehiculos \n";
         if (Camion1N.contar()==np)
@@ -337,7 +333,6 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
                         cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
                         Camion2N.apilar(vehi);
                         cout <<"\n Camion2N.contar()";
-                        //Cola_zonaN.encolar(vehi);
                         cout<<": Llevado a almacen número: "<< nAlmacen <<"\n";
                     }
                     else
@@ -352,7 +347,6 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
                 {
                     Camion1S.apilar(vehi);
                     cout << "\n Camion1S.contar()";
-                    //Cola_zonaS.encolar(vehi);
                     cout<<": Llevado a almacen número: "<< nAlmacen <<"\n";
                 }
                 else
@@ -423,7 +417,6 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
             while (Camion1N.contar()!=0)
             {
                 mueveVehi = Camion1N.fondo();
-                //mueveVehi.asignaConcesionario(nc);
                 mueveVehi = asignaConcesionario2(mueveVehi, nc);
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
                 Camion1N.desapilar();
@@ -518,7 +511,6 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
     for (int i=1; i<=5; i++)                                //Crea los digitos aleatorios para el almacen aleatorio
     {
         nAlmacen = 1 + rand() % (4); //GENERA ALEATORIOS ENTRE 0 Y 4
-        //cout << num<< "";
 
     }
     Vehiculo mueveVehi;
@@ -550,7 +542,6 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
                         cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
                         Camion2N.apilar(vehi);
                         cout << "\nCamion2N.contar()";
-                        //Cola_zonaN.encolar(vehi);
                         cout<<": Llevado a almacen número: "<< nAlmacen <<"\n"<<"\n";
                     }
                     else
@@ -575,7 +566,6 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
                         cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
                         Camion2S.apilar(vehi);
                         cout << "\n Camion2S.contar()";
-                        //Cola_zonaS.encolar(vehi);
                         cout<<": Llevado a almacen número: "<< nAlmacen <<"\n"<<"\n";
                     }
                     else
@@ -613,7 +603,6 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
                 {
                     Camion1O.apilar(vehi);
                     cout <<"\n Camion1O.contar()";
-                    //Cola_zonaO.encolar(vehi);
                     cout<<": Llevado a almacen número: "<< nAlmacen <<"\n"<<"\n";
                 }
                 else

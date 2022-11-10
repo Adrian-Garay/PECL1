@@ -106,7 +106,7 @@ void Cola::mostrarCola()
             aux=aux->siguiente;
         }
     }
-    //}
+
 }
 
 void Cola::VerCima()

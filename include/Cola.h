@@ -20,7 +20,6 @@ public:
     void VerCima();
     bool es_vacia();
     void mostrarCola();
-    //void mostrarCola (); //No es correcto, se implementa para ver que está creada correctamente
 };
 
 #endif // COLA_H

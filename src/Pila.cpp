@@ -29,7 +29,7 @@ void Pila::apilar(Vehiculo v)
 
 void Pila::desapilar()
 {
-    pnodo nodo; //puntero aux para manipular el nodo
+    pnodo nodo;
     if (cima)
     {
         nodo = cima;
@@ -92,14 +92,13 @@ Vehiculo Pila::fondo()
     p_aux.~Pila();
     return e;
 }
-//Iterativo
-void Pila::montar(Pila p1,Pila p2)  //No funciona apilar
+
+void Pila::montar(Pila p1,Pila p2)
 {
     Vehiculo e;
     while(! esVacia())
     {
         e = cima->valor;
-        //cout << e;
         desapilar();
         p1.apilar(e);
         cout << p2.contar();
@@ -117,23 +116,12 @@ void Pila::quitar(int n)
     }
 }
 
-/* void Pila::quito_fondo(){
-    if(!esVacia()) {
-           int c=cima->valor;
-           desapilar();
-           if (!esVacia()){
-               quito_fondo();
-               apilar(c);
-           }
-       }
-}*/
 
 void Pila::inversa()
 {
     Pila pi;
     Pila p2;
     Vehiculo e;
-    //pi = p2.inversa();
     pi.apilar(cima->valor);
     while(! esVacia())
     {
