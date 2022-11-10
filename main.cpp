@@ -159,15 +159,16 @@ int main()
             cout<<"\n";
 
             //cout<<"Ha elegido la octava opción\n";
-            g.crea_vehiculos(nv);                   //genera una serie de vehículos y los mete en el almacen de la fabrica
-            cout<<"\n";
+
             g.muestra_almacen_fabrica();            //Muestra los automoviles almacenados en el almacen de la fabrica
-            cout<<"\n";
-            g.cambioAlmacenRand(nv,np,nc);
-            cout<<"\n";
+            cout<<"------------------\n";
+            g.cambioAlmacenRandTotal(ns,np,nc);
+            cout<<"------------------\n";
             g.muestra_zonas();
-            cout<<"\n";
+            cout<<"-------------------\n";
+            cout << "Cola de la fábrica: \n";
             g.muestra_almacen_fabrica();
+
         }
 
         //Salir del programa

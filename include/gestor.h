@@ -27,6 +27,7 @@ public:
 
     void muestra_zonas();
     void limpia_almacen();
+    void cambioAlmacenRandTotal (int ns , int np,int nc);
 
     void cambioAlmacenRand(int ns, int np, int nc);
     void cambioAlmacen(int ns,int nAlmacen, int np, int nc);

@@ -281,6 +281,7 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
     }
     else
     {
+
         for(int i=0; i<ns; i++)
         {
             vehi = Cola_fabrica.inicio();
@@ -434,4 +435,179 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
             }
         }
     }
+}
+
+
+void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
+{
+    int nAlmacen;
+    for (int i=1; i<=5; i++)                                //Crea los digitos aleatorios para el almacen aleatorio
+    {
+        nAlmacen = 1 + rand() % (4); //GENERA ALEATORIOS ENTRE 0 Y 4
+        //cout << num<< "";
+
+    }
+    Vehiculo mueveVehi;
+    if (Cola_fabrica.es_vacia())
+    {
+        cout<<"Cola de fabrica esta vacía. \n";
+    }
+    else
+    {while (!Cola_fabrica.es_vacia()){
+        int longi= Cola_fabrica.get_longitud();
+        for(int i=0; i<longi; i++)
+        {
+            vehi = Cola_fabrica.inicio();
+            Cola_fabrica.desencolar();
+            cout << vehi.verVehiculo();
+            if (nAlmacen==1)           //Zona Norte
+            {
+                if (Camion1N.contar()<np)
+                {
+                    Camion1N.apilar(vehi);
+                    cout << Camion1N.contar()<<endl;
+                    //Cola_zonaN.encolar(vehi);
+                    cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
+                }
+                else
+                {
+                    if (Camion2N.contar()<np)
+                    {
+                        cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
+                        Camion2N.apilar(vehi);
+                        cout << Camion2N.contar()<<endl;
+                        //Cola_zonaN.encolar(vehi);
+                        cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
+                    }
+                    else
+                    {
+                        cout<<"Camiones llenos."<<endl;
+                    }
+                }
+            }
+            else if (nAlmacen==2)       //Zona Sur
+            {
+                if (Camion1S.contar()<np)
+                {
+                    Camion1S.apilar(vehi);
+                    cout << Camion1S.contar()<<endl;
+                    //Cola_zonaS.encolar(vehi);
+                    cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
+                }
+                else
+                {
+                    if (Camion2S.contar()<np)
+                    {
+                        cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
+                        Camion2S.apilar(vehi);
+                        cout << Camion2S.contar()<<endl;
+                        //Cola_zonaS.encolar(vehi);
+                        cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
+                    }
+                    else
+                    {
+                        cout<<"Camiones llenos."<<endl;
+                    }
+                }
+            }
+            else if (nAlmacen==3)       //Zona Este
+            {
+                if (Camion1E.contar()<np)
+                {
+                    Camion1E.apilar(vehi);
+                    cout << Camion1E.contar()<<endl;
+                    //Cola_zonaE.encolar(vehi);
+                    cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
+                }
+                else
+                {
+                    if (Camion2E.contar()<np)
+                    {
+                        cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
+                        Camion2E.apilar(vehi);
+                        cout << Camion2E.contar()<<endl;
+                        //Cola_zonaE.encolar(vehi);
+                        cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
+                    }
+                    else
+                    {
+                        cout<<"Camiones llenos."<<endl;
+                    }
+                }
+            }
+            else if (nAlmacen==4)       //Zona Oeste
+            {
+                if (Camion1O.contar()<np)
+                {
+                    Camion1O.apilar(vehi);
+                    cout << Camion1O.contar()<<endl;
+                    //Cola_zonaO.encolar(vehi);
+                    cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
+                }
+                else
+                {
+                    if (Camion2O.contar()<np)
+                    {
+                        cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
+                        Camion2O.apilar(vehi);
+                        cout << Camion2O.contar()<<endl;
+                        //Cola_zonaO.encolar(vehi);
+                        cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
+                    }
+                    else
+                    {
+                        cout<<"Camiones llenos."<<endl;
+                    }
+                }
+            }
+        }}
+        cout<<"Se han movido "<< ns << " vehiculos \n";
+        /**/if (Camion1N.contar()==np)
+        {
+            while (Camion1N.contar()!=0)
+            {
+                mueveVehi = Camion1N.fondo();
+                mueveVehi = asignaConcesionario2(mueveVehi, nc);
+                cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
+                Camion1N.desapilar();
+                Cola_zonaN.encolar(mueveVehi);
+            }
+        }
+        if (Camion1E.contar()==np)
+        {
+            while (Camion1E.contar()!=0)
+            {
+                mueveVehi = Camion1E.fondo();
+                mueveVehi.asignaConcesionario(nc);
+                cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
+                Camion1E.desapilar();
+                Cola_zonaE.encolar(mueveVehi);
+            }
+        }
+        if (Camion1S.contar()==np)
+        {
+            while (Camion1S.contar()!=0)
+            {
+                mueveVehi = Camion1S.fondo();
+                mueveVehi.asignaConcesionario(nc);
+                cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
+                Camion1S.desapilar();
+                Cola_zonaS.encolar(mueveVehi);
+            }
+        }
+        if (Camion1O.contar()==np)
+        {
+            while (Camion1O.contar()!=0)
+            {
+                mueveVehi = Camion1O.fondo();
+                mueveVehi.asignaConcesionario(nc);
+                cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
+                Camion1O.desapilar();
+                Cola_zonaO.encolar(mueveVehi);
+            }
+        }
+    }
+
+
+
 }
