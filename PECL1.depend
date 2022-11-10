@@ -506,7 +506,7 @@
 	"string.h"
 	"vehiculo.h"
 
-1668022386 source:c:\users\ajgar\desktop\pecl1\main.cpp
+1668100832 source:c:\users\ajgar\desktop\pecl1\main.cpp
 	<iostream>
 	"include\Pila.h"
 	"include/Cola.h"
@@ -518,44 +518,44 @@
 	"string.h"
 	<locale.h>
 
-1668020742 c:\users\ajgar\desktop\pecl1\include\pila.h
+1668100832 c:\users\ajgar\desktop\pecl1\include\pila.h
 	"NodoPila.h"
 	"vehiculo.h"
 
-1668020742 c:\users\ajgar\desktop\pecl1\include\nodopila.h
+1668100832 c:\users\ajgar\desktop\pecl1\include\nodopila.h
 	"vehiculo.h"
 	<iostream>
 
-1668020742 c:\users\ajgar\desktop\pecl1\include\vehiculo.h
+1668100832 c:\users\ajgar\desktop\pecl1\include\vehiculo.h
 	<string>
 
-1668020742 c:\users\ajgar\desktop\pecl1\include\cola.h
+1668100832 c:\users\ajgar\desktop\pecl1\include\cola.h
 	"NodoCola.h"
 	"vehiculo.h"
 
-1668020742 c:\users\ajgar\desktop\pecl1\include\nodocola.h
+1668100832 c:\users\ajgar\desktop\pecl1\include\nodocola.h
 	"vehiculo.h"
 	<iostream>
 
-1668020742 c:\users\ajgar\desktop\pecl1\include\gestor.h
+1668100832 c:\users\ajgar\desktop\pecl1\include\gestor.h
 	<iostream>
 	"Pila.h"
 	"Cola.h"
 	"ZonaReparto.h"
 
-1668020742 c:\users\ajgar\desktop\pecl1\include\zonareparto.h
+1668100832 c:\users\ajgar\desktop\pecl1\include\zonareparto.h
 	"Cola.h"
 	"Pila.h"
 	"vehiculo.h"
 
-1668020742 source:c:\users\ajgar\desktop\pecl1\src\cola.cpp
+1668100832 source:c:\users\ajgar\desktop\pecl1\src\cola.cpp
 	"../include/Cola.h"
 	"../include/NodoCola.h"
 	"vehiculo.h"
 	"Cola.h"
 	<iostream>
 
-1668020742 source:c:\users\ajgar\desktop\pecl1\src\gestor.cpp
+1668100832 source:c:\users\ajgar\desktop\pecl1\src\gestor.cpp
 	<string>
 	<iostream>
 	<stdlib.h>
@@ -567,21 +567,21 @@
 	<time.h>
 	"ZonaReparto.h"
 
-1668020742 source:c:\users\ajgar\desktop\pecl1\src\nodocola.cpp
+1668100832 source:c:\users\ajgar\desktop\pecl1\src\nodocola.cpp
 	"../include/NodoCola.h"
 	"vehiculo.h"
 
-1668020742 source:c:\users\ajgar\desktop\pecl1\src\nodopila.cpp
+1668100832 source:c:\users\ajgar\desktop\pecl1\src\nodopila.cpp
 	"../include/NodoPila.h"
 	"vehiculo.h"
 
-1668020742 source:c:\users\ajgar\desktop\pecl1\src\pila.cpp
+1668100832 source:c:\users\ajgar\desktop\pecl1\src\pila.cpp
 	<iostream>
 	"../include/Pila.h"
 	"../include/NodoPila.h"
 	"vehiculo.h"
 
-1668020742 source:c:\users\ajgar\desktop\pecl1\src\vehiculo.cpp
+1668100832 source:c:\users\ajgar\desktop\pecl1\src\vehiculo.cpp
 	"vehiculo.h"
 	<stdlib.h>
 	<time.h>
@@ -589,7 +589,7 @@
 	<string>
 	"string.h"
 
-1668020742 source:c:\users\ajgar\desktop\pecl1\src\zonareparto.cpp
+1668100832 source:c:\users\ajgar\desktop\pecl1\src\zonareparto.cpp
 	"ZonaReparto.h"
 	"Cola.h"
 	"string.h"

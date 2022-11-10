@@ -13,23 +13,21 @@ using namespace std;
 
 int main()
 {
-    setlocale(LC_CTYPE, "Spanish");
+    setlocale(LC_CTYPE, "Spanish");     //Mostrar caracteres exclusivos del castellano
 
     //Variables
-    int menu_entrada;
-    bool bucle=true;
-    string error = "Operación erronea. Vuelva a intentarlo.\n";
-    int nv = 20;    //Numero de coches creados
-    int ns = 7;     //Numero de Coches movidos
-    int nc = 5;     //Numero posible concesionarios
-    int np = 10;     //Capacidad maxima de los camiones
-    int nAlmacen;
-
-
-    Gestor g;
+    int menu_entrada;       //Variable para moverse por el menu
+    bool bucle=true;        //Variable para que se ejecute el bucle siempre
+    string error = "Operación erronea. Vuelva a intentarlo.\n";     //Variable de error
+    int nv = 20;        //Numero de coches creados
+    int ns = 7;         //Numero de Coches movidos
+    int nc = 5;         //Numero posible concesionarios
+    int np = 10;        //Capacidad maxima de los camiones
+    int nAlmacen;       //Numero del almacen
+    Gestor g;       //Llamada a la clase gestor
 
     //Opciones del menú
-    while(bucle)
+    while(bucle)        //Que se ejecute el bucle hasta que se quiera salir
     {
         cout<<"Indique la operación que desea realizar:\n";
         cout<<"1 -> Generar aleatoriamente la cola de automóviles disponibles en la fábrica con NV automóviles.\n";
@@ -44,18 +42,18 @@ int main()
         cin>>menu_entrada;
 
         //Primera opción
-        if (menu_entrada == 1)
+        if (menu_entrada == 1)      //Se elige  la primera opcion
         {
             cout<<"Ha elegido la primera opción\n";
             cout<<"\n";
 
-            g.crea_vehiculos(nv);                   //genera una serie de vehículos y los mete en el almacen de la fabrica
+            g.crea_vehiculos(nv);       //genera una serie de vehículos y los mete en el almacen de la fabrica
             cout<<"\n";
         }
 
 
         //Segunda opción
-        else if (menu_entrada == 2)                 //genera nv vehículos y los mete en el almacen de la fabrica
+        else if (menu_entrada == 2)     //Se elige la segunda opcion
         {
             cout<<"Ha elegido la segunda opción\n";
             cout<<"\n";
@@ -64,32 +62,32 @@ int main()
             cin>>nv;
             while((nv<10)||(nv>30))
             {
-                cout << "Error: Debe pedir minimo 10 automoviles y como máximo 30.\n";
+                cout << "Error: Debe pedir minimo 10 vehículos y como máximo 30.\n";
                 cin>>nv;
             }
-            g.crea_vehiculos(nv);
+            g.crea_vehiculos(nv);       //genera una serie de vehículos y los mete en el almacen de la fabrica
         }
 
 
 
         //Tercera opción
-        else if (menu_entrada == 3)
+        else if (menu_entrada == 3)     //Se elige la tercera opcion
         {
             cout<<"Ha elegido la tercera opción\n";
             cout<<"\n";
 
-            g.muestra_almacen_fabrica();            //Muestra los automoviles almacenados en el almacen de la fabrica
+            g.muestra_almacen_fabrica();            //Muestra los vehiculos almacenados en el almacen de la fabrica
             cout<<"\n";
         }
 
 
         //Cuarta opción
-        else if (menu_entrada == 4)
+        else if (menu_entrada == 4)     //Se elige la cuarta opcion
         {
             cout<<"Ha elegido la cuarta opción\n";
             cout<<"\n";
 
-            g.limpia_almacen();                     //Borra los automoviles almacenados en el almacen de la fabrica
+            g.limpia_almacen();                     //Borra los vehiculos almacenados en el almacen de la fabrica
             cout<<"\n";
         }
 
@@ -97,21 +95,21 @@ int main()
 
 
         //Quinta opción
-        else if (menu_entrada == 5)
+        else if (menu_entrada == 5)     //Se elige la quinta opcion
         {
             cout<<"Ha elegido la quinta opción\n";
             cout<<"\n";
             if((ns<3)||(ns>8))
             {
-                cout << "Error: Debe pedir minimo 3 automoviles y como máximo 8.\n";
+                cout << "Error: Debe pedir minimo 3 vehículos y como máximo 8.\n";
                 cin>>ns;
             }
-            g.cambioAlmacenRand(ns,np,nc);
+            g.cambioAlmacenRand(ns,np,nc);      //Mueve los vehiculos del almacen de fabrica a una zona aleatoria
 
         }
 
         //Sexta opción
-        else if (menu_entrada == 6)
+        else if (menu_entrada == 6)     //Se elige la sexta opcion
         {
             cout<<"Ha elegido la sexta opción\n";
             cout<<"\n";
@@ -123,7 +121,7 @@ int main()
             }
             while((ns<3)||(ns>8))
             {
-                cout << "Error: Debe pedir minimo 3 automoviles y como máximo 8.\n";
+                cout << "Error: Debe pedir minimo 3 vehículos y como máximo 8.\n";
                 cin>>ns;
                 cout <<"\n";
             }
@@ -137,38 +135,37 @@ int main()
                 cout <<"\n";
             }
 
-            g.cambioAlmacen(ns,nAlmacen,np, nc);
+            g.cambioAlmacen(ns,nAlmacen,np, nc);        //Mueve los vehiculos del almacen de fabrica a una zona aleatoria
 
         }
 
         //Septima opción
-        else if (menu_entrada == 7)
+        else if (menu_entrada == 7)     //Se elige la septima opcion
         {
             cout<<"Ha elegido la septima opción\n";
             cout<<"\n";
 
-            g.muestra_zonas();
+            g.muestra_zonas();      //Muestra los vehiculos almacenados en cada zona y en sus camiones asignados
             cout<<"\n";
         }
 
         //Octava opción
-        else if (menu_entrada == 8)
+        else if (menu_entrada == 8)     //Se elige la octava opcion
         {
             cout<<"Ha elegido la octava opción\n";
             cout<<"\n";
-            g.muestra_almacen_fabrica();            //Muestra los automoviles almacenados en el almacen de la fabrica
+            g.muestra_almacen_fabrica();            //Muestra los vehiculos almacenados en el almacen de la fabrica
             cout<<"------------------\n";
-            g.cambioAlmacenRandTotal(ns,np,nc);
+            g.cambioAlmacenRandTotal(ns,np,nc);     //Mueve el resto de vehiculos del almacen de fabrica a las  zonas
             cout<<"------------------\n";
-            g.muestra_zonas();
+            g.muestra_zonas();      //Muestra los vehiculos almacenados en cada zona y en sus camiones asignados
             cout<<"-------------------\n";
             cout << "Cola de la fábrica: \n";
-            g.muestra_almacen_fabrica();
-
+            g.muestra_almacen_fabrica();        //Muestra el almacen de la fabrica
         }
 
         //Salir del programa
-        else if (menu_entrada == 0)
+        else if (menu_entrada == 0)     //Se sale del programa
         {
             bucle=false;
         }
