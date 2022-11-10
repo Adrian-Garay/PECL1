@@ -129,13 +129,16 @@ int main()
             {
                 cout << "Error: Debe pedir minimo 3 automoviles y como máximo 8.\n";
                 cin>>ns;
+                cout <<"\n";
             }
             cout<<"Indique el almacen de destino: \n 1:Almacen Norte \n 2:Almacen Sur  \n 3:Almacen Este \n 4:Almacen Oeste \n";
             cin>>nAlmacen;
+            cout <<"\n";
             while((nAlmacen<1)||(nAlmacen>4))
             {
                 cout << "Error: Tiene que ser entre 1 y 4.\n";
                 cin>>nAlmacen;
+                cout <<"\n";
             }
 
             g.cambioAlmacen(ns,nAlmacen,np, nc);
