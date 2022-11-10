@@ -664,7 +664,7 @@
 	"../include/NodoPila.h"
 	"vehiculo.h"
 
-1668021499 source:c:\users\fatim\onedrive\escritorio\pecl1\src\pila.cpp
+1668081424 source:c:\users\fatim\onedrive\escritorio\pecl1\src\pila.cpp
 	<iostream>
 	"../include/Pila.h"
 	"../include/NodoPila.h"

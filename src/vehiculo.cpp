@@ -39,23 +39,23 @@ Vehiculo::~Vehiculo()
     //dtor
 }
 
-void Vehiculo::cargarVehiculo(std::string nBast,std::string mod, std::string col, int conce)
+void Vehiculo::cargarVehiculo(string nBast,string mod, string col, int conce)
 {
-    std::string nBastidor = nBast;
-    std::string modelo = mod;
-    std::string color = col;
+    string nBastidor = nBast;
+    string modelo = mod;
+    string color = col;
     int concesionario = conce;
 }
 
-std::string Vehiculo::devolverNBastidor()
+string Vehiculo::devolverNBastidor()
 {
     return nBastidor;
 }
-std::string Vehiculo::devolverColor()
+string Vehiculo::devolverColor()
 {
     return color;
 }
-std::string Vehiculo::devolverModelo()
+string Vehiculo::devolverModelo()
 {
     return modelo;
 }
@@ -64,7 +64,7 @@ int Vehiculo::devolverConcesionario()
     return concesionario;
 }
 
-std::string Vehiculo::verVehiculo()
+string Vehiculo::verVehiculo()
 {
     return( "El vehiculo tiene número de bastidor: " + devolverNBastidor() + ", modelo: " + devolverModelo() + ", color: "+ devolverColor() + ", concesionario: " +  std::to_string(devolverConcesionario())+" " + "\n" );
 }

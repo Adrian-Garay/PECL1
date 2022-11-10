@@ -95,14 +95,10 @@ void Cola::mostrarCola()
         cout<<"Cola fabrica longitud  = "+to_string(get_longitud()) + "\n";
         for(int i=0; i<longitud; i++)
         {
-
-
             cout<<"\n";
-            cout<<"-------";
             cout<<"Coche número: "<<i+1<<endl;
             cout <<aux->v.verVehiculo()<<endl;
-
-
+            cout<<"-------";
             aux=aux->siguiente;
         }
     }
