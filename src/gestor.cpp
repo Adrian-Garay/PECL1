@@ -606,8 +606,52 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
                 Cola_zonaO.encolar(mueveVehi);
             }
         }
+
+         if (Camion2N.contar()==np)
+        {
+            while (Camion2N.contar()!=0)
+            {
+                mueveVehi = Camion2N.fondo();
+                mueveVehi = asignaConcesionario2(mueveVehi, nc);
+                cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
+                Camion2N.desapilar();
+                Cola_zonaN.encolar(mueveVehi);
+            }
+        }
+        if (Camion2E.contar()==np)
+        {
+            while (Camion2E.contar()!=0)
+            {
+                mueveVehi = Camion2E.fondo();
+                mueveVehi.asignaConcesionario(nc);
+                cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
+                Camion2E.desapilar();
+                Cola_zonaE.encolar(mueveVehi);
+            }
+        }
+        if (Camion2S.contar()==np)
+        {
+            while (Camion2S.contar()!=0)
+            {
+                mueveVehi = Camion2S.fondo();
+                mueveVehi.asignaConcesionario(nc);
+                cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
+                Camion2S.desapilar();
+                Cola_zonaS.encolar(mueveVehi);
+            }
+        }
+        if (Camion2O.contar()==np)
+        {
+            while (Camion2O.contar()!=0)
+            {
+                mueveVehi = Camion2O.fondo();
+                mueveVehi.asignaConcesionario(nc);
+                cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
+                Camion2O.desapilar();
+                Cola_zonaO.encolar(mueveVehi);
+            }
+        }
     }
-
-
-
 }
+
+
