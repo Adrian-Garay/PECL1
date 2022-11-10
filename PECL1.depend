@@ -506,7 +506,7 @@
 	"string.h"
 	"vehiculo.h"
 
-1668100832 source:c:\users\ajgar\desktop\pecl1\main.cpp
+1668104791 source:c:\users\ajgar\desktop\pecl1\main.cpp
 	<iostream>
 	"include\Pila.h"
 	"include/Cola.h"
@@ -555,7 +555,7 @@
 	"Cola.h"
 	<iostream>
 
-1668100832 source:c:\users\ajgar\desktop\pecl1\src\gestor.cpp
+1668106971 source:c:\users\ajgar\desktop\pecl1\src\gestor.cpp
 	<string>
 	<iostream>
 	<stdlib.h>

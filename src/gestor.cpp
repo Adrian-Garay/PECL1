@@ -25,64 +25,64 @@ Vehiculo Gestor::asignaConcesionario2(Vehiculo vehi, int nc)
 {
     int num;
 
-    num = 1 + rand() % (nc); //GENERA ALEATORIOS ENTRE 0 Y 5
+    num = 1 + rand() % (nc);        //GENERA ALEATORIOS ENTRE 0 Y 5
     vehi.concesionario=num;
     return vehi;
 }
 
-void Gestor::crea_vehiculos(int nv)         //Apartado 1 y 2
+void Gestor::crea_vehiculos(int nv)     //Apartado 1 y 2
 {
     //Vehiculo vehiculos_cola;
 
     for (int i=0; i<nv; i++)
     {
-        Cola_fabrica.encolar(Vehiculo());
+        Cola_fabrica.encolar(Vehiculo());       //Mete el vehiculo en la cola
     }
     Cola_fabrica.VerCima();
     cout<<"Se han creado: "<<nv<<" vehiculos \n";
 }
 void Gestor::muestra_almacen_fabrica()      //Apartado 3
 {
-    Cola_fabrica.mostrarCola();
+    Cola_fabrica.mostrarCola();     //Muestra el almacen de la fabrica
 
 }
 
-void Gestor::muestra_zonas()      //Apartado 3
+void Gestor::muestra_zonas()        //Apartado 3
 {
     cout<<"Zona Norte:\n";
-    Cola_zonaN.mostrarCola();
-    cout<<"  Camion 1 Norte:\n";
-    Camion1N.mostrarDatos();
-    cout<<"  Camion 2 Norte:\n";
-    Camion2N.mostrarDatos();
+    Cola_zonaN.mostrarCola();       //Muestra la zona Norte
+    cout<<"Camion 1 Norte:\n";
+    Camion1N.mostrarDatos();        //Muestra el primer camion de la zona Norte
+    cout<<"Camion 2 Norte:\n";
+    Camion2N.mostrarDatos();        //Muestra el segundo camion de la zona Norte
     cout<<"\n";
     cout<<"Zona Sur:\n";
 
-    Cola_zonaS.mostrarCola();
-    cout<<"  Camion 1 sur:\n";
-    Camion1S.mostrarDatos();
-    cout<<"  Camion 2 sur:\n";
-    Camion2S.mostrarDatos();
+    Cola_zonaS.mostrarCola();       //Muestra la zona Sur
+    cout<<"Camion 1 sur:\n";
+    Camion1S.mostrarDatos();        //Muestra el primer camion de la zona Sur
+    cout<<"Camion 2 sur:\n";
+    Camion2S.mostrarDatos();        //Muestra el segundo camion de la zona Sur
     cout<<"\n";
 
     cout<<"Zona Este:\n";
-    Cola_zonaE.mostrarCola();
-    cout<<"  Camion 1 Este:\n";
-    Camion1E.mostrarDatos();
-    cout<<"  Camion 2 Este:\n";
-    Camion2E.mostrarDatos();
+    Cola_zonaE.mostrarCola();       //Muestra la zona Este
+    cout<<"Camion 1 Este:\n";
+    Camion1E.mostrarDatos();        //Muestra el primer camion de la zona Este
+    cout<<"Camion 2 Este:\n";
+    Camion2E.mostrarDatos();        //Muestra el segundo camion de la zona Este
     cout<<"\n";
     cout<<"Zona Oeste:\n";
 
-    Cola_zonaO.mostrarCola();
-    cout<<"  Camion 1 Oeste:\n";
-    Camion1O.mostrarDatos();
-    cout<<"  Camion 2 Oeste:\n";
-    Camion2O.mostrarDatos();
+    Cola_zonaO.mostrarCola();       //Muestra la zona Oeste
+    cout<<"Camion 1 Oeste:\n";
+    Camion1O.mostrarDatos();        //Muestra el primer camion de la zona Oeste
+    cout<<"Camion 2 Oeste:\n";
+    Camion2O.mostrarDatos();        //Muestra el segundo camion de la zona Oeste
     cout<<"\n";
 }
 
-void Gestor::limpia_almacen()               //Apartado4
+void Gestor::limpia_almacen()       //Apartado4
 {
     if (Cola_fabrica.es_vacia())
     {
@@ -92,18 +92,18 @@ void Gestor::limpia_almacen()               //Apartado4
     {
         while(!Cola_fabrica.es_vacia())
         {
-            Cola_fabrica.desencolar();
+            Cola_fabrica.desencolar();      //Quita un valor de la cola
         }
         cout<<"Almacen de la fabrica vaciado.\n";
     }
 }
 
-void Gestor::cambioAlmacenRand(int ns, int np, int nc)          //Apartado 5
+void Gestor::cambioAlmacenRand(int ns, int np, int nc)      //Apartado 5
 {
     int almacenRandom;
     Vehiculo mueveVehi;
 
-    for (int i=1; i<=5; i++)                                //Crea los digitos aleatorios para el almacen aleatorio
+    for (int i=1; i<=5; i++)        //Crea los digitos aleatorios para el almacen aleatorio
     {
         almacenRandom = 1 + rand() % (4); //GENERA ALEATORIOS ENTRE 0 Y 4
 
@@ -117,13 +117,13 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)          //Apartado 5
         for(int j=0; j<ns; j++)
         {
             vehi = Cola_fabrica.inicio();
-            Cola_fabrica.desencolar();
-            if (almacenRandom==1)           //Zona Norte
+            Cola_fabrica.desencolar();      //Desencola la cola de la fabrica
+            if (almacenRandom==1)       //Zona Norte
             {
                 if (Camion1N.contar()<np)
                 {
-                    Camion1N.apilar(vehi);
-                    cout << Camion1N.contar();
+                    Camion1N.apilar(vehi);      //Mete el vehiculo en el  camion
+                    cout << Camion1N.contar();      //Cuenta cuantos vehiculos tiene el camion
                     cout<<": Llevado a almacen número: "<< almacenRandom <<"\n";
                 }
                 else
@@ -131,8 +131,8 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)          //Apartado 5
                     if (Camion2O.contar()<np)
                     {
                         cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
-                        Camion2N.apilar(vehi);
-                        cout << Camion2N.contar();
+                        Camion2N.apilar(vehi);      //Mete el vehiculo en el  camion
+                        cout << Camion2N.contar();      //Cuenta cuantos vehiculos tiene el camion
                         cout<<": Llevado a almacen número: "<< almacenRandom <<"\n";
                     }
                     else
@@ -145,8 +145,8 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)          //Apartado 5
             {
                 if (Camion1S.contar()<np)
                 {
-                    Camion1S.apilar(vehi);
-                    cout << Camion1S.contar();
+                    Camion1S.apilar(vehi);      //Mete el vehiculo en el  camion
+                    cout << Camion1S.contar();      //Cuenta cuantos vehiculos tiene el camion
                     cout<<": Llevado a almacen número: "<< almacenRandom <<"\n"<<"\n";
                 }
                 else
@@ -154,8 +154,8 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)          //Apartado 5
                     if (Camion2S.contar()<np)
                     {
                         cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
-                        Camion2S.apilar(vehi);
-                        cout << Camion2S.contar();
+                        Camion2S.apilar(vehi);      //Mete el vehiculo en el  camion
+                        cout << Camion2S.contar();      //Cuenta cuantos vehiculos tiene el camion
                         cout<<": Llevado a almacen número: "<< almacenRandom <<"\n"<<"\n";
                     }
                     else
@@ -168,8 +168,8 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)          //Apartado 5
             {
                 if (Camion1E.contar()<np)
                 {
-                    Camion1E.apilar(vehi);
-                    cout << Camion1E.contar();
+                    Camion1E.apilar(vehi);      //Mete el vehiculo en el  camion
+                    cout << Camion1E.contar();      //Cuenta cuantos vehiculos tiene el camion
                     cout<<": Llevado a almacen número: "<< almacenRandom <<"\n";
                 }
                 else
@@ -177,8 +177,8 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)          //Apartado 5
                     if (Camion2E.contar()<np)
                     {
                         cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
-                        Camion2E.apilar(vehi);
-                        cout << Camion2E.contar();
+                        Camion2E.apilar(vehi);      //Mete el vehiculo en el  camion
+                        cout << Camion2E.contar();      //Cuenta cuantos vehiculos tiene el camion
                         cout<<": Llevado a almacen número: "<< almacenRandom <<"\n";
                     }
                     else
@@ -191,8 +191,8 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)          //Apartado 5
             {
                 if (Camion1O.contar()<np)
                 {
-                    Camion1O.apilar(vehi);
-                    cout << Camion1O.contar();
+                    Camion1O.apilar(vehi);      //Mete el vehiculo en el  camion
+                    cout << Camion1O.contar();      //Cuenta cuantos vehiculos tiene el camion
                     cout<<": Llevado a almacen número: "<< almacenRandom<<"\n";
                 }
                 else
@@ -200,8 +200,8 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)          //Apartado 5
                     if (Camion2O.contar()<np)
                     {
                         cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
-                        Camion2O.apilar(vehi);
-                        cout << Camion2O.contar();
+                        Camion2O.apilar(vehi);      //Mete el vehiculo en el  camion
+                        cout << Camion2O.contar();      //Cuenta cuantos vehiculos tiene el camion
                         cout<<": Llevado a almacen número: "<< almacenRandom <<"\n";
                     }
                     else
@@ -212,16 +212,16 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)          //Apartado 5
             }
 
         }
-        cout<<"Se han movido "<< ns << " vehiculos \n";
+        cout<<"Se han movido "<< ns << " vehiculos \n\n";
         if (Camion1N.contar()==np)
         {
             while (Camion1N.contar()!=0)
             {
                 mueveVehi = Camion1N.fondo();
-                mueveVehi.asignaConcesionario(nc);
+                mueveVehi.asignaConcesionario(nc);      //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion1N.desapilar();
-                Cola_zonaN.encolar(mueveVehi);
+                Camion1N.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaN.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
         if (Camion1E.contar()==np)
@@ -229,10 +229,10 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)          //Apartado 5
             while (Camion1E.contar()!=0)
             {
                 mueveVehi = Camion1E.fondo();
-                mueveVehi.asignaConcesionario(nc);
+                mueveVehi.asignaConcesionario(nc);      //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion1E.desapilar();
-                Cola_zonaE.encolar(mueveVehi);
+                Camion1E.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaE.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
         if (Camion1S.contar()==np)
@@ -240,10 +240,10 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)          //Apartado 5
             while (Camion1S.contar()!=0)
             {
                 mueveVehi = Camion1S.fondo();
-                mueveVehi.asignaConcesionario(nc);
+                mueveVehi.asignaConcesionario(nc);      //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion1S.desapilar();
-                Cola_zonaS.encolar(mueveVehi);
+                Camion1S.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaS.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
         if (Camion1O.contar()==np)
@@ -251,10 +251,10 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)          //Apartado 5
             while (Camion1O.contar()!=0)
             {
                 mueveVehi = Camion1O.fondo();
-                mueveVehi.asignaConcesionario(nc);
+                mueveVehi.asignaConcesionario(nc);      //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion1O.desapilar();
-                Cola_zonaO.encolar(mueveVehi);
+                Camion1O.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaO.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
          if (Camion2N.contar()==np)
@@ -262,10 +262,10 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)          //Apartado 5
             while (Camion2N.contar()!=0)
             {
                 mueveVehi = Camion2N.fondo();
-                mueveVehi = asignaConcesionario2(mueveVehi, nc);
+                mueveVehi.asignaConcesionario(nc);      //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion2N.desapilar();
-                Cola_zonaN.encolar(mueveVehi);
+                Camion2N.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaN.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
         if (Camion2E.contar()==np)
@@ -273,10 +273,10 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)          //Apartado 5
             while (Camion2E.contar()!=0)
             {
                 mueveVehi = Camion2E.fondo();
-                mueveVehi.asignaConcesionario(nc);
+                mueveVehi.asignaConcesionario(nc);      //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion2E.desapilar();
-                Cola_zonaE.encolar(mueveVehi);
+                Camion2E.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaE.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
         if (Camion2S.contar()==np)
@@ -284,10 +284,10 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)          //Apartado 5
             while (Camion2S.contar()!=0)
             {
                 mueveVehi = Camion2S.fondo();
-                mueveVehi.asignaConcesionario(nc);
+                mueveVehi.asignaConcesionario(nc);      //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion2S.desapilar();
-                Cola_zonaS.encolar(mueveVehi);
+                Camion2S.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaS.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
         if (Camion2O.contar()==np)
@@ -295,10 +295,10 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)          //Apartado 5
             while (Camion2O.contar()!=0)
             {
                 mueveVehi = Camion2O.fondo();
-                mueveVehi.asignaConcesionario(nc);
+                mueveVehi.asignaConcesionario(nc);       //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion2O.desapilar();
-                Cola_zonaO.encolar(mueveVehi);
+                Camion2O.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaO.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
     }
@@ -318,11 +318,11 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
             vehi = Cola_fabrica.inicio();
             Cola_fabrica.desencolar();
             cout << vehi.verVehiculo();
-            if (nAlmacen==1)           //Zona Norte
+            if (nAlmacen==1)        //Zona Norte
             {
                 if (Camion1N.contar()<np)
                 {
-                    Camion1N.apilar(vehi);
+                    Camion1N.apilar(vehi);      //Mete el vehiculo en el  camion
                     cout << "\nCamion1N.contar()";
                     cout<<": Llevado a almacen número: "<< nAlmacen <<"\n";
                 }
@@ -331,7 +331,7 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
                     if (Camion2N.contar()<np)
                     {
                         cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
-                        Camion2N.apilar(vehi);
+                        Camion2N.apilar(vehi);      //Mete el vehiculo en el  camion
                         cout <<"\n Camion2N.contar()";
                         cout<<": Llevado a almacen número: "<< nAlmacen <<"\n";
                     }
@@ -345,7 +345,7 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
             {
                 if (Camion1S.contar()<np)
                 {
-                    Camion1S.apilar(vehi);
+                    Camion1S.apilar(vehi);      //Mete el vehiculo en el  camion
                     cout << "\n Camion1S.contar()";
                     cout<<": Llevado a almacen número: "<< nAlmacen <<"\n";
                 }
@@ -354,7 +354,7 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
                     if (Camion2S.contar()<np)
                     {
                         cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
-                        Camion2S.apilar(vehi);
+                        Camion2S.apilar(vehi);      //Mete el vehiculo en el  camion
                         cout << "\n Camion2S.contar()";
                         cout<<": Llevado a almacen número: "<< nAlmacen <<"\n";
                     }
@@ -368,7 +368,7 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
             {
                 if (Camion1E.contar()<np)
                 {
-                    Camion1E.apilar(vehi);
+                    Camion1E.apilar(vehi);      //Mete el vehiculo en el  camion
                     cout <<"\n Camion1E.contar()";
                     cout<<":Llevado a almacen número: "<< nAlmacen <<"\n";
                 }
@@ -377,7 +377,7 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
                     if (Camion2E.contar()<np)
                     {
                         cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
-                        Camion2E.apilar(vehi);
+                        Camion2E.apilar(vehi);      //Mete el vehiculo en el  camion
                         cout << "\n Camion2E.contar()";
                         cout<<": Llevado a almacen número: "<< nAlmacen <<"\n";
                     }
@@ -391,7 +391,7 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
             {
                 if (Camion1O.contar()<np)
                 {
-                    Camion1O.apilar(vehi);
+                    Camion1O.apilar(vehi);      //Mete el vehiculo en el  camion
                     cout << "\n Camion1O.contar()";
                     cout<<": Llevado a almacen número: "<< nAlmacen <<"\n";
                 }
@@ -400,7 +400,7 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
                     if (Camion2O.contar()<np)
                     {
                         cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
-                        Camion2O.apilar(vehi);
+                        Camion2O.apilar(vehi);      //Mete el vehiculo en el  camion
                         cout << "\n Camion2O.contar()";
                         cout<<": Llevado a almacen número: "<< nAlmacen <<"\n";
                     }
@@ -411,16 +411,16 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
                 }
             }
         }
-        cout<<"Se han movido "<< ns << " vehiculos \n";
+        cout<<"Se han movido "<< ns << " vehiculos \n\n";
         /**/if (Camion1N.contar()==np)
         {
             while (Camion1N.contar()!=0)
             {
                 mueveVehi = Camion1N.fondo();
-                mueveVehi = asignaConcesionario2(mueveVehi, nc);
+                mueveVehi.asignaConcesionario(nc);      //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion1N.desapilar();
-                Cola_zonaN.encolar(mueveVehi);
+                Camion1N.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaN.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
         if (Camion1E.contar()==np)
@@ -428,10 +428,10 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
             while (Camion1E.contar()!=0)
             {
                 mueveVehi = Camion1E.fondo();
-                mueveVehi.asignaConcesionario(nc);
+                mueveVehi.asignaConcesionario(nc);      //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion1E.desapilar();
-                Cola_zonaE.encolar(mueveVehi);
+                Camion1E.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaE.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
         if (Camion1S.contar()==np)
@@ -439,10 +439,10 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
             while (Camion1S.contar()!=0)
             {
                 mueveVehi = Camion1S.fondo();
-                mueveVehi.asignaConcesionario(nc);
+                mueveVehi.asignaConcesionario(nc);      //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion1S.desapilar();
-                Cola_zonaS.encolar(mueveVehi);
+                Camion1S.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaS.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
         if (Camion1O.contar()==np)
@@ -450,10 +450,10 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
             while (Camion1O.contar()!=0)
             {
                 mueveVehi = Camion1O.fondo();
-                mueveVehi.asignaConcesionario(nc);
+                mueveVehi.asignaConcesionario(nc);      //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion1O.desapilar();
-                Cola_zonaO.encolar(mueveVehi);
+                Camion1O.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaO.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
 
@@ -462,10 +462,10 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
             while (Camion2N.contar()!=0)
             {
                 mueveVehi = Camion2N.fondo();
-                mueveVehi = asignaConcesionario2(mueveVehi, nc);
+                mueveVehi.asignaConcesionario(nc);      //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion2N.desapilar();
-                Cola_zonaN.encolar(mueveVehi);
+                Camion2N.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaN.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
         if (Camion2E.contar()==np)
@@ -473,10 +473,10 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
             while (Camion2E.contar()!=0)
             {
                 mueveVehi = Camion2E.fondo();
-                mueveVehi.asignaConcesionario(nc);
+                mueveVehi.asignaConcesionario(nc);      //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion2E.desapilar();
-                Cola_zonaE.encolar(mueveVehi);
+                Camion2E.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaE.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
         if (Camion2S.contar()==np)
@@ -484,10 +484,10 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
             while (Camion2S.contar()!=0)
             {
                 mueveVehi = Camion2S.fondo();
-                mueveVehi.asignaConcesionario(nc);
+                mueveVehi.asignaConcesionario(nc);      //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion2S.desapilar();
-                Cola_zonaS.encolar(mueveVehi);
+                Camion2S.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaS.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
         if (Camion2O.contar()==np)
@@ -495,10 +495,10 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
             while (Camion2O.contar()!=0)
             {
                 mueveVehi = Camion2O.fondo();
-                mueveVehi.asignaConcesionario(nc);
+                mueveVehi.asignaConcesionario(nc);      //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion2O.desapilar();
-                Cola_zonaO.encolar(mueveVehi);
+                Camion2O.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaO.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
     }
@@ -508,9 +508,9 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
 void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
 {
     int nAlmacen;
-    for (int i=1; i<=5; i++)                                //Crea los digitos aleatorios para el almacen aleatorio
+    for (int i=1; i<=5; i++)        //Crea los digitos aleatorios para el almacen aleatorio
     {
-        nAlmacen = 1 + rand() % (4); //GENERA ALEATORIOS ENTRE 0 Y 4
+        nAlmacen = 1 + rand() % (4);        //GENERA ALEATORIOS ENTRE 0 Y 4
 
     }
     Vehiculo mueveVehi;
@@ -526,11 +526,11 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
             vehi = Cola_fabrica.inicio();
             Cola_fabrica.desencolar();
             cout << vehi.verVehiculo();
-            if (nAlmacen==1)           //Zona Norte
+            if (nAlmacen==1)        //Zona Norte
             {
                 if (Camion1N.contar()<np)
                 {
-                    Camion1N.apilar(vehi);
+                    Camion1N.apilar(vehi);      //Mete el vehiculo en el  camion
                     cout <<"\n Camion1N.contar()";
 
                     cout<<": Llevado a almacen número: "<< nAlmacen <<"\n"<<"\n";
@@ -540,7 +540,7 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
                     if (Camion2N.contar()<np)
                     {
                         cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
-                        Camion2N.apilar(vehi);
+                        Camion2N.apilar(vehi);      //Mete el vehiculo en el  camion
                         cout << "\nCamion2N.contar()";
                         cout<<": Llevado a almacen número: "<< nAlmacen <<"\n"<<"\n";
                     }
@@ -554,9 +554,8 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
             {
                 if (Camion1S.contar()<np)
                 {
-                    Camion1S.apilar(vehi);
+                    Camion1S.apilar(vehi);      //Mete el vehiculo en el  camion
                     cout << "\n Camion1S.contar()";
-                    //Cola_zonaS.encolar(vehi);
                     cout<<": Llevado a almacen número: "<< nAlmacen <<"\n"<<"\n";
                 }
                 else
@@ -564,7 +563,7 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
                     if (Camion2S.contar()<np)
                     {
                         cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
-                        Camion2S.apilar(vehi);
+                        Camion2S.apilar(vehi);      //Mete el vehiculo en el  camion
                         cout << "\n Camion2S.contar()";
                         cout<<": Llevado a almacen número: "<< nAlmacen <<"\n"<<"\n";
                     }
@@ -578,7 +577,7 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
             {
                 if (Camion1E.contar()<np)
                 {
-                    Camion1E.apilar(vehi);
+                    Camion1E.apilar(vehi);      //Mete el vehiculo en el  camion
                     cout <<"\n Camion1E.contar()";
                     cout<<": Llevado a almacen número: "<< nAlmacen <<"\n"<<"\n";
                 }
@@ -587,7 +586,7 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
                     if (Camion2E.contar()<np)
                     {
                         cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
-                        Camion2E.apilar(vehi);
+                        Camion2E.apilar(vehi);      //Mete el vehiculo en el  camion
                         cout <<"\n Camion2E.contar()";
                         cout<<": Llevado a almacen número: "<< nAlmacen <<"\n"<<"\n";
                     }
@@ -601,7 +600,7 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
             {
                 if (Camion1O.contar()<np)
                 {
-                    Camion1O.apilar(vehi);
+                    Camion1O.apilar(vehi);      //Mete el vehiculo en el  camion
                     cout <<"\n Camion1O.contar()";
                     cout<<": Llevado a almacen número: "<< nAlmacen <<"\n"<<"\n";
                 }
@@ -610,9 +609,8 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
                     if (Camion2O.contar()<np)
                     {
                         cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
-                        Camion2O.apilar(vehi);
+                        Camion2O.apilar(vehi);      //Mete el vehiculo en el  camion
                         cout << "\n Camion2O.contar()";
-                        //Cola_zonaO.encolar(vehi);
                         cout<<": Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
                     }
                     else
@@ -628,10 +626,10 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
             while (Camion1N.contar()!=0)
             {
                 mueveVehi = Camion1N.fondo();
-                mueveVehi = asignaConcesionario2(mueveVehi, nc);
+                mueveVehi.asignaConcesionario(nc);      //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion1N.desapilar();
-                Cola_zonaN.encolar(mueveVehi);
+                Camion1N.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaN.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
         if (Camion1E.contar()==np)
@@ -639,10 +637,10 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
             while (Camion1E.contar()!=0)
             {
                 mueveVehi = Camion1E.fondo();
-                mueveVehi.asignaConcesionario(nc);
+                mueveVehi.asignaConcesionario(nc);      //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion1E.desapilar();
-                Cola_zonaE.encolar(mueveVehi);
+                Camion1E.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaE.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
         if (Camion1S.contar()==np)
@@ -650,10 +648,10 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
             while (Camion1S.contar()!=0)
             {
                 mueveVehi = Camion1S.fondo();
-                mueveVehi.asignaConcesionario(nc);
+                mueveVehi.asignaConcesionario(nc);      //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion1S.desapilar();
-                Cola_zonaS.encolar(mueveVehi);
+                Camion1S.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaS.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
         if (Camion1O.contar()==np)
@@ -661,10 +659,10 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
             while (Camion1O.contar()!=0)
             {
                 mueveVehi = Camion1O.fondo();
-                mueveVehi.asignaConcesionario(nc);
+                mueveVehi.asignaConcesionario(nc);      //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion1O.desapilar();
-                Cola_zonaO.encolar(mueveVehi);
+                Camion1O.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaO.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
 
@@ -673,10 +671,10 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
             while (Camion2N.contar()!=0)
             {
                 mueveVehi = Camion2N.fondo();
-                mueveVehi = asignaConcesionario2(mueveVehi, nc);
+                mueveVehi.asignaConcesionario(nc);      //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion2N.desapilar();
-                Cola_zonaN.encolar(mueveVehi);
+                Camion2N.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaN.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
         if (Camion2E.contar()==np)
@@ -684,10 +682,10 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
             while (Camion2E.contar()!=0)
             {
                 mueveVehi = Camion2E.fondo();
-                mueveVehi.asignaConcesionario(nc);
+                mueveVehi.asignaConcesionario(nc);      //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion2E.desapilar();
-                Cola_zonaE.encolar(mueveVehi);
+                Camion2E.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaE.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
         if (Camion2S.contar()==np)
@@ -695,10 +693,10 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
             while (Camion2S.contar()!=0)
             {
                 mueveVehi = Camion2S.fondo();
-                mueveVehi.asignaConcesionario(nc);
+                mueveVehi.asignaConcesionario(nc);      //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion2S.desapilar();
-                Cola_zonaS.encolar(mueveVehi);
+                Camion2S.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaS.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
         if (Camion2O.contar()==np)
@@ -706,10 +704,10 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
             while (Camion2O.contar()!=0)
             {
                 mueveVehi = Camion2O.fondo();
-                mueveVehi.asignaConcesionario(nc);
+                mueveVehi.asignaConcesionario(nc);      //Asigna un concesionario al vehiculo
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
-                Camion2O.desapilar();
-                Cola_zonaO.encolar(mueveVehi);
+                Camion2O.desapilar();       //Desapila el vehiculo del camion
+                Cola_zonaO.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
     }
