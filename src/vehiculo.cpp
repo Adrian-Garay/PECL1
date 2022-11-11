@@ -64,17 +64,9 @@ int Vehiculo::devolverConcesionario()
     return concesionario;
 }
 
+
 string Vehiculo::verVehiculo()
 {
     return( "El vehiculo tiene número de bastidor: " + devolverNBastidor() + ", modelo: " + devolverModelo() + ", color: "+ devolverColor() + ", concesionario: " +  std::to_string(devolverConcesionario())+" " + "\n" );
-}
-
-void Vehiculo::asignaConcesionario(int nc)
-{
-    int num;
-
-    num = 1 + rand() % (nc); //GENERA ALEATORIOS ENTRE 0 Y 5
-
-    Vehiculo::concesionario=num;
 }
 
