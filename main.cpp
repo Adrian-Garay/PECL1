@@ -98,6 +98,7 @@ int main()
         else if (menu_entrada == 5)     //Se elige la quinta opcion
         {
             cout<<"Ha elegido la quinta opción\n";
+            cout<<"Almacen de destino: \n 1:Almacen Norte \n 2:Almacen Sur  \n 3:Almacen Este \n 4:Almacen Oeste \n";
             cout<<"\n";
             if((ns<3)||(ns>8))
             {

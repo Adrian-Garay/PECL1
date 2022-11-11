@@ -62,8 +62,16 @@ string Vehiculo::devolverModelo()
 int Vehiculo::devolverConcesionario()
 {
     return concesionario;
-}
+}/*
+int Vehiculo::devolverConcesionarioAsig()
+{
+    int num;
 
+    num = 1 + rand() % (5);        //GENERA ALEATORIOS ENTRE 0 Y 5
+    concesionario=num;
+
+    return concesionario;
+}*/
 
 string Vehiculo::verVehiculo()
 {

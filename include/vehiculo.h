@@ -16,7 +16,7 @@ public:
     std::string devolverNBastidor();
     int devolverConcesionario();
     std::string verVehiculo();
-
+//int devolverConcesionarioAsig();
     int concesionario; //número entero entre 1 y máximo de concesionarios NC
 
 protected:

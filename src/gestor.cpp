@@ -114,7 +114,7 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)      //Apartado 5
     }
     else
     {
-        for(int j=0; j<ns; j++)
+        for(int j=0; j<np; j++)
         {
             vehi = Cola_fabrica.inicio();
             Cola_fabrica.desencolar();      //Desencola la cola de la fabrica
@@ -213,7 +213,7 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)      //Apartado 5
 
         }
         cout<<"Se han movido "<< ns << " vehiculos \n\n";
-        if (Camion1N.contar()==np)
+         if (Camion1N.contar()==np)
         {
             while (Camion1N.contar()!=0)
             {
@@ -257,8 +257,11 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)      //Apartado 5
                 Cola_zonaO.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
+
          if (Camion2N.contar()==np)
         {
+
+        }
             while (Camion2N.contar()!=0)
             {
                 mueveVehi = Camion2N.fondo();
@@ -279,8 +282,7 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)      //Apartado 5
                 Cola_zonaE.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
-        if (Camion2S.contar()==np)
-        {
+        if (Camion2S.contar()==np){
             while (Camion2S.contar()!=0)
             {
                 mueveVehi = Camion2S.fondo();
@@ -288,10 +290,10 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)      //Apartado 5
                 cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
                 Camion2S.desapilar();       //Desapila el vehiculo del camion
                 Cola_zonaS.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
-            }
-        }
-        if (Camion2O.contar()==np)
-        {
+            }}
+
+        if (Camion2O.contar()==np){
+
             while (Camion2O.contar()!=0)
             {
                 mueveVehi = Camion2O.fondo();
@@ -301,7 +303,7 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)      //Apartado 5
                 Cola_zonaO.encolar(mueveVehi);      //Mueve el vehiculo a la zona asignada
             }
         }
-    }
+
 }
 void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Apartado 6
 {
@@ -313,7 +315,7 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
     else
     {
 
-        for(int i=0; i<ns; i++)
+        for(int i=0; i<np; i++)
         {
             vehi = Cola_fabrica.inicio();
             Cola_fabrica.desencolar();
@@ -412,7 +414,7 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
             }
         }
         cout<<"Se han movido "<< ns << " vehiculos \n\n";
-        /**/if (Camion1N.contar()==np)
+         /**/if (Camion1N.contar()==np)
         {
             while (Camion1N.contar()!=0)
             {
@@ -620,7 +622,7 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
                 }
             }
         }}
-        cout<<"Se han movido "<< ns << " vehiculos \n";
+        cout<<"Se han movido los vehiculos \n";
         /**/if (Camion1N.contar()==np)
         {
             while (Camion1N.contar()!=0)

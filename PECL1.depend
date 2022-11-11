@@ -684,7 +684,7 @@
 	"string.h"
 	"vehiculo.h"
 
-1668110570 source:c:\users\fatim\onedrive\escritorio\pl1\main.cpp
+1668170510 source:c:\users\fatim\onedrive\escritorio\pl1\main.cpp
 	<iostream>
 	"include\Pila.h"
 	"include/Cola.h"
@@ -704,7 +704,7 @@
 	"vehiculo.h"
 	<iostream>
 
-1668170082 c:\users\fatim\onedrive\escritorio\pl1\include\vehiculo.h
+1668195889 c:\users\fatim\onedrive\escritorio\pl1\include\vehiculo.h
 	<string>
 
 1668110570 c:\users\fatim\onedrive\escritorio\pl1\include\cola.h
@@ -733,7 +733,7 @@
 	"Cola.h"
 	<iostream>
 
-1668169971 source:c:\users\fatim\onedrive\escritorio\pl1\src\gestor.cpp
+1668195870 source:c:\users\fatim\onedrive\escritorio\pl1\src\gestor.cpp
 	<string>
 	<iostream>
 	<stdlib.h>
@@ -759,7 +759,7 @@
 	"../include/NodoPila.h"
 	"vehiculo.h"
 
-1668170082 source:c:\users\fatim\onedrive\escritorio\pl1\src\vehiculo.cpp
+1668195900 source:c:\users\fatim\onedrive\escritorio\pl1\src\vehiculo.cpp
 	"vehiculo.h"
 	<stdlib.h>
 	<time.h>
