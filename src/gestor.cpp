@@ -114,7 +114,7 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)      //Apartado 5
     }
     else
     {
-        for(int j=0; j<np; j++)
+        for(int j=0; j<ns; j++)
         {
             vehi = Cola_fabrica.inicio();
             Cola_fabrica.desencolar();      //Desencola la cola de la fabrica
@@ -315,7 +315,7 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
     else
     {
 
-        for(int i=0; i<np; i++)
+        for(int i=0; i<ns; i++)
         {
             vehi = Cola_fabrica.inicio();
             Cola_fabrica.desencolar();
