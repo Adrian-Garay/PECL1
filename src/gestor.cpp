@@ -323,7 +323,7 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
                 if (Camion1N.contar()<np)
                 {
                     Camion1N.apilar(vehi);      //Mete el vehiculo en el  camion
-                    cout << "\nCamion1N.contar()";
+                    cout << "\n"<<Camion1N.contar();
                     cout<<": Llevado a almacen número: "<< nAlmacen <<"\n";
                 }
                 else
@@ -332,7 +332,7 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
                     {
                         cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
                         Camion2N.apilar(vehi);      //Mete el vehiculo en el  camion
-                        cout <<"\n Camion2N.contar()";
+                        cout <<"\n"<< Camion2N.contar();
                         cout<<": Llevado a almacen número: "<< nAlmacen <<"\n";
                     }
                     else
@@ -346,7 +346,7 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
                 if (Camion1S.contar()<np)
                 {
                     Camion1S.apilar(vehi);      //Mete el vehiculo en el  camion
-                    cout << "\n Camion1S.contar()";
+                    cout << "\n"<< Camion1S.contar();
                     cout<<": Llevado a almacen número: "<< nAlmacen <<"\n";
                 }
                 else
@@ -355,7 +355,7 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
                     {
                         cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
                         Camion2S.apilar(vehi);      //Mete el vehiculo en el  camion
-                        cout << "\n Camion2S.contar()";
+                        cout << "\n "<<Camion2S.contar();
                         cout<<": Llevado a almacen número: "<< nAlmacen <<"\n";
                     }
                     else
@@ -369,7 +369,7 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
                 if (Camion1E.contar()<np)
                 {
                     Camion1E.apilar(vehi);      //Mete el vehiculo en el  camion
-                    cout <<"\n Camion1E.contar()";
+                    cout <<"\n"<< Camion1E.contar();
                     cout<<":Llevado a almacen número: "<< nAlmacen <<"\n";
                 }
                 else
@@ -378,7 +378,7 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
                     {
                         cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
                         Camion2E.apilar(vehi);      //Mete el vehiculo en el  camion
-                        cout << "\n Camion2E.contar()";
+                        cout << "\n"<< Camion2E.contar();
                         cout<<": Llevado a almacen número: "<< nAlmacen <<"\n";
                     }
                     else
@@ -392,7 +392,7 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
                 if (Camion1O.contar()<np)
                 {
                     Camion1O.apilar(vehi);      //Mete el vehiculo en el  camion
-                    cout << "\n Camion1O.contar()";
+                    cout << "\n"<<Camion1O.contar();
                     cout<<": Llevado a almacen número: "<< nAlmacen <<"\n";
                 }
                 else
@@ -401,7 +401,7 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
                     {
                         cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
                         Camion2O.apilar(vehi);      //Mete el vehiculo en el  camion
-                        cout << "\n Camion2O.contar()";
+                        cout << "\n "<<Camion2O.contar();
                         cout<<": Llevado a almacen número: "<< nAlmacen <<"\n";
                     }
                     else
@@ -531,7 +531,7 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
                 if (Camion1N.contar()<np)
                 {
                     Camion1N.apilar(vehi);      //Mete el vehiculo en el  camion
-                    cout <<"\n Camion1N.contar()";
+                    cout <<"\n "<<Camion1N.contar();
 
                     cout<<": Llevado a almacen número: "<< nAlmacen <<"\n"<<"\n";
                 }
@@ -541,7 +541,7 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
                     {
                         cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
                         Camion2N.apilar(vehi);      //Mete el vehiculo en el  camion
-                        cout << "\nCamion2N.contar()";
+                        cout << "\n"<<Camion2N.contar();
                         cout<<": Llevado a almacen número: "<< nAlmacen <<"\n"<<"\n";
                     }
                     else
@@ -555,7 +555,7 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
                 if (Camion1S.contar()<np)
                 {
                     Camion1S.apilar(vehi);      //Mete el vehiculo en el  camion
-                    cout << "\n Camion1S.contar()";
+                    cout << "\n "<<Camion1S.contar();
                     cout<<": Llevado a almacen número: "<< nAlmacen <<"\n"<<"\n";
                 }
                 else
@@ -564,7 +564,7 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
                     {
                         cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
                         Camion2S.apilar(vehi);      //Mete el vehiculo en el  camion
-                        cout << "\n Camion2S.contar()";
+                        cout << "\n "<<Camion2S.contar();
                         cout<<": Llevado a almacen número: "<< nAlmacen <<"\n"<<"\n";
                     }
                     else
@@ -587,7 +587,7 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
                     {
                         cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
                         Camion2E.apilar(vehi);      //Mete el vehiculo en el  camion
-                        cout <<"\n Camion2E.contar()";
+                        cout <<"\n "<<Camion2E.contar();
                         cout<<": Llevado a almacen número: "<< nAlmacen <<"\n"<<"\n";
                     }
                     else
@@ -601,7 +601,7 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
                 if (Camion1O.contar()<np)
                 {
                     Camion1O.apilar(vehi);      //Mete el vehiculo en el  camion
-                    cout <<"\n Camion1O.contar()";
+                    cout <<"\n "<<Camion1O.contar();
                     cout<<": Llevado a almacen número: "<< nAlmacen <<"\n"<<"\n";
                 }
                 else
@@ -610,7 +610,7 @@ void Gestor::cambioAlmacenRandTotal(int ns, int np, int nc)
                     {
                         cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
                         Camion2O.apilar(vehi);      //Mete el vehiculo en el  camion
-                        cout << "\n Camion2O.contar()";
+                        cout << "\n"<<Camion2O.contar();
                         cout<<": Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
                     }
                     else
